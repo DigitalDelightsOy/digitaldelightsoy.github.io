@@ -1,0 +1,198 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "SignatureComponent",
+            "id": "component-SignatureComponent-95271b71778aec023714432177a3d0bc9b39973a834dd56a100d6b04359487abedc32b7f4762fb242e84c895e5f6efa060ba748f889b734ea1005dc194db5ce6",
+            "file": "projects/digital-delights-signature/src/signature/components/signature/signature.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "dd-signature",
+            "styleUrls": [
+                "./signature.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./signature.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "variant",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nDetermines the size of the canves and output image.\n\n'small' is 400px X 200px\n'medium' is 600px X 300px\n'large' is 800px X 400px\n",
+                    "description": "<p>Determines the size of the canves and output image.</p>\n<p>&#39;small&#39; is 400px X 200px\n&#39;medium&#39; is 600px X 300px\n&#39;large&#39; is 800px X 400px</p>\n",
+                    "line": 24,
+                    "type": "\"small\" | \"medium\" | \"large\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "imageChanged",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nOutput event that is fired when user stops writing.\n",
+                    "description": "<p>Output event that is fired when user stops writing.</p>\n",
+                    "line": 29,
+                    "type": "EventEmitter<string | undefined>"
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "backgroundColor",
+                    "defaultValue": "'transparent'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 40,
+                    "modifierKind": [
+                        123,
+                        148
+                    ]
+                },
+                {
+                    "name": "canvasRef",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ElementRef",
+                    "optional": true,
+                    "description": "<p>Reference to the canvas element.</p>\n",
+                    "line": 34,
+                    "rawdescription": "\n\nReference to the canvas element.\n",
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'canvas', {read: ElementRef, static: true}"
+                        }
+                    ],
+                    "modifierKind": [
+                        170,
+                        123
+                    ]
+                },
+                {
+                    "name": "height",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": true,
+                    "description": "",
+                    "line": 37
+                },
+                {
+                    "name": "penColor",
+                    "defaultValue": "'black'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 39,
+                    "modifierKind": [
+                        123,
+                        148
+                    ]
+                },
+                {
+                    "name": "signaturePad",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "SignaturePad",
+                    "optional": true,
+                    "description": "",
+                    "line": 41,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "width",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": true,
+                    "description": "",
+                    "line": 36
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "clearPad",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 88,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngAfterViewInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 66,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nAfterViewInit initializes the canvas element.\n",
+                    "description": "<p>AfterViewInit initializes the canvas element.</p>\n"
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 46,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nInit function handles the size of the canvas based on the input variant.\n",
+                    "description": "<p>Init function handles the size of the canvas based on the input variant.</p>\n"
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "ButtonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "assetsDirs": [],
+            "extends": [],
+            "implements": [
+                "OnInit",
+                "AfterViewInit"
+            ]
+        }
+    ],
+    "modules": [],
+    "miscellaneous": []
+}

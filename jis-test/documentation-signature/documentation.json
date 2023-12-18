@@ -1,0 +1,207 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "SignatureComponent",
+            "id": "component-SignatureComponent-f478c21296cb64330224ae64496552fa9f174ebed3b53b78b792eb95fbd512eab4a599400cfd3ea1fca9099d7bc9154902a86f17a605b9643456ac344c271129",
+            "file": "projects/digital-delights-signature/src/signature/components/signature/signature.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "dd-signature",
+            "styleUrls": [
+                "./signature.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./signature.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "variant",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nDetermines the size of the canves and output image.\n\n'small' is 400px X 200px\n'medium' is 600px X 300px\n'large' is 800px X 400px\n",
+                    "description": "<p>Determines the size of the canves and output image.</p>\n<p>&#39;small&#39; is 400px X 200px\n&#39;medium&#39; is 600px X 300px\n&#39;large&#39; is 800px X 400px</p>\n",
+                    "line": 24,
+                    "type": "\"small\" | \"medium\" | \"large\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "imageChanged",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nOutput event that is fired when user stops writing.\n",
+                    "description": "<p>Output event that is fired when user stops writing.</p>\n",
+                    "line": 29,
+                    "type": "EventEmitter<string | undefined>"
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "backgroundColor",
+                    "defaultValue": "'transparent'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 40,
+                    "modifierKind": [
+                        123,
+                        148
+                    ]
+                },
+                {
+                    "name": "canvasRef",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ElementRef",
+                    "optional": true,
+                    "description": "<p>Reference to the canvas element.</p>\n",
+                    "line": 34,
+                    "rawdescription": "\n\nReference to the canvas element.\n",
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'canvas', {read: ElementRef, static: true}"
+                        }
+                    ],
+                    "modifierKind": [
+                        170,
+                        123
+                    ]
+                },
+                {
+                    "name": "height",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": true,
+                    "description": "",
+                    "line": 37
+                },
+                {
+                    "name": "penColor",
+                    "defaultValue": "'black'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 39,
+                    "modifierKind": [
+                        123,
+                        148
+                    ]
+                },
+                {
+                    "name": "signaturePad",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "SignaturePad",
+                    "optional": true,
+                    "description": "",
+                    "line": 41,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "width",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": true,
+                    "description": "",
+                    "line": 36
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "clearPad",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 88,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngAfterViewInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 66,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nAfterViewInit initializes the canvas element.\n",
+                    "description": "<p>AfterViewInit initializes the canvas element.</p>\n"
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 46,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nInit function handles the size of the canvas based on the input variant.\n",
+                    "description": "<p>Init function handles the size of the canvas based on the input variant.</p>\n"
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "ButtonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\r\nimport { AfterViewInit, Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';\r\nimport { ButtonModule } from '@digitaldelightsoy/design-library/src/button';\r\nimport SignaturePad from 'signature_pad';\r\n\r\n@Component({\r\n    selector: 'dd-signature',\r\n    templateUrl: './signature.component.html',\r\n    styleUrls: ['./signature.component.scss'],\r\n    standalone: true,\r\n    imports: [\r\n        CommonModule, //\r\n        ButtonModule,\r\n    ],\r\n})\r\nexport class SignatureComponent implements OnInit, AfterViewInit {\r\n    /**\r\n     * Determines the size of the canves and output image.\r\n     *\r\n     * 'small' is 400px X 200px\r\n     * 'medium' is 600px X 300px\r\n     * 'large' is 800px X 400px\r\n     */\r\n    @Input() variant: 'small' | 'medium' | 'large' = 'medium';\r\n\r\n    /**\r\n     * Output event that is fired when user stops writing.\r\n     */\r\n    @Output() private imageChanged: EventEmitter<string | undefined> = new EventEmitter();\r\n\r\n    /**\r\n     * Reference to the canvas element.\r\n     */\r\n    @ViewChild('canvas', { read: ElementRef, static: true }) private canvasRef?: ElementRef;\r\n\r\n    width?: number;\r\n    height?: number;\r\n\r\n    private readonly penColor = 'black';\r\n    private readonly backgroundColor = 'transparent';\r\n    private signaturePad?: SignaturePad;\r\n\r\n    /**\r\n     * Init function handles the size of the canvas based on the input variant.\r\n     */\r\n    ngOnInit() {\r\n        switch (this.variant) {\r\n            case 'small':\r\n                this.width = 400;\r\n                break;\r\n            case 'medium':\r\n                this.width = 600;\r\n                break;\r\n\r\n            default:\r\n                this.width = 800;\r\n                break;\r\n        }\r\n\r\n        this.height = this.width / 2;\r\n    }\r\n\r\n    /**\r\n     * AfterViewInit initializes the canvas element.\r\n     */\r\n    ngAfterViewInit() {\r\n        if (!this.canvasRef) {\r\n            throw new Error('No canvasRef found.');\r\n        }\r\n\r\n        this.signaturePad = new SignaturePad(this.canvasRef.nativeElement, {\r\n            penColor: this.penColor,\r\n            backgroundColor: this.backgroundColor,\r\n            maxWidth: 2,\r\n            minWidth: 1,\r\n        });\r\n\r\n        this.signaturePad.penColor = this.penColor;\r\n\r\n        this.signaturePad.on();\r\n\r\n        this.signaturePad.addEventListener('endStroke', () => {\r\n            const data: string | undefined = this.signaturePad?.toDataURL();\r\n            this.imageChanged.emit(data);\r\n        });\r\n    }\r\n\r\n    clearPad() {\r\n        this.signaturePad?.clear();\r\n        this.imageChanged.emit(undefined);\r\n    }\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".signature-pad {\r\n    position: relative;\r\n\r\n    &.small {\r\n        width: 402px;\r\n        height: 202px;\r\n    }\r\n\r\n    &.medium {\r\n        width: 602px;\r\n        height: 302px;\r\n    }\r\n\r\n    &.large {\r\n        width: 802px;\r\n        height: 402px;\r\n    }\r\n\r\n    .signature-clear-button {\r\n        position: absolute;\r\n        right: 16px;\r\n        top: 16px;\r\n    }\r\n}\r\n",
+                    "styleUrl": "./signature.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "implements": [
+                "OnInit",
+                "AfterViewInit"
+            ],
+            "templateData": "<div class=\"signature-pad\" [ngClass]=\"{'small': variant === 'small', 'medium': variant === 'medium', 'large': variant === 'large'}\">\r\n    <canvas class=\"dd-white-bg border border-radius-6 elevation-01\" [width]=\"width\" [height]=\"height\" #canvas></canvas>\r\n    <dd-button class=\"signature-clear-button\" [text]=\"'Clear'\" [color]=\"'primary-light'\" (buttonClick)=\"clearPad()\"></dd-button>\r\n</div>\r\n"
+        }
+    ],
+    "modules": [],
+    "miscellaneous": []
+}

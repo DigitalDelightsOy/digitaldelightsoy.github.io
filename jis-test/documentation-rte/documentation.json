@@ -1,0 +1,491 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "RichTextEditorComponent",
+            "id": "component-RichTextEditorComponent-34140355ee4a212e3cb102d80edf9776910d840c1b8e1201ff2b789ddea0d6c3e992ad490b39ab2e2ee9639ba3d9dbb091df751325857d4fa1973a37d06b3a35",
+            "file": "projects/digital-delights-rte/src/rich-text-editor/components/rich-text-editor/rich-text-editor.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [
+                {
+                    "name": "{\n    provide: NG_VALUE_ACCESSOR, useExisting: forwardRef(() => RichTextEditorComponent), multi: true,\n}",
+                    "type": "component"
+                },
+                {
+                    "name": "{\n    provide: NG_VALIDATORS, useExisting: forwardRef(() => RichTextEditorComponent), multi: true,\n}",
+                    "type": "component"
+                }
+            ],
+            "selector": "dd-rich-text-editor",
+            "styleUrls": [
+                "./rich-text-editor.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./rich-text-editor.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "editorOptions",
+                    "defaultValue": "defaultRTEOptions",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nOptions for configuring editor.\n",
+                    "description": "<p>Options for configuring editor.</p>\n",
+                    "line": 56,
+                    "type": "RawEditorOptions",
+                    "decorators": []
+                },
+                {
+                    "name": "errorMessages",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nError messages.",
+                    "description": "<p>Error messages.</p>\n",
+                    "line": 59,
+                    "type": "literal type",
+                    "decorators": []
+                },
+                {
+                    "name": "errors",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 61,
+                    "type": "ValidationErrors | null",
+                    "decorators": []
+                },
+                {
+                    "name": "id",
+                    "defaultValue": "'dd-wysiwyg'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nID of the input field. Required if there are multiple on the same page.\n",
+                    "description": "<p>ID of the input field. Required if there are multiple on the same page.</p>\n",
+                    "line": 51,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 46,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "submitted",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nWhen form is submitted, form field is validated and new detection cycle is triggered.\nIf this input is not provided, the component will simply mark itself as touched whenever the value is changed.\n",
+                    "description": "<p>When form is submitted, form field is validated and new detection cycle is triggered.\nIf this input is not provided, the component will simply mark itself as touched whenever the value is changed.</p>\n",
+                    "line": 67,
+                    "type": "boolean",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "_onChange",
+                    "defaultValue": "() => {...}",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "function",
+                    "optional": false,
+                    "description": "",
+                    "line": 145
+                },
+                {
+                    "name": "_submitted",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "<p>Save the submitted value to the component.</p>\n",
+                    "line": 76,
+                    "rawdescription": "\n\nSave the submitted value to the component.\n",
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "destroySubject",
+                    "defaultValue": "new Subject()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Subject<void>",
+                    "optional": false,
+                    "description": "",
+                    "line": 71,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "ObjectKeys",
+                    "defaultValue": "Object.keys as <T>(o: T) => Extract<keyof T, string>[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "function",
+                    "optional": false,
+                    "description": "<p>Returns the keys from the Object.keys as keyof T.</p>\n<p><a href=\"https://github.com/microsoft/TypeScript/pull/12253#issuecomment-393954723\">https://github.com/microsoft/TypeScript/pull/12253#issuecomment-393954723</a></p>\n",
+                    "line": 84,
+                    "rawdescription": "\n\nReturns the keys from the Object.keys as keyof T.\n\nhttps://github.com/microsoft/TypeScript/pull/12253#issuecomment-393954723\n"
+                },
+                {
+                    "name": "onTouched",
+                    "defaultValue": "() => {...}",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "function",
+                    "optional": false,
+                    "description": "",
+                    "line": 151
+                },
+                {
+                    "name": "value",
+                    "defaultValue": "new FormControl()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "FormControl<string | null | undefined>",
+                    "optional": false,
+                    "description": "",
+                    "line": 69
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "markAsTouched",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 172,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nMarks the form control as touched.",
+                    "description": "<p>Marks the form control as touched.</p>\n"
+                },
+                {
+                    "name": "ngAfterViewInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 112,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nRun one change detection and mark the form field as touched,\nso the error is shown if the form field is initialized with invalid value.\n",
+                    "description": "<p>Run one change detection and mark the form field as touched,\nso the error is shown if the form field is initialized with invalid value.</p>\n"
+                },
+                {
+                    "name": "ngOnChanges",
+                    "args": [
+                        {
+                            "name": "changes",
+                            "type": "SimpleChanges",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 123,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "changes",
+                            "type": "SimpleChanges",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ngOnDestroy",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 140,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "registerOnChange",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "function",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "function": []
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 156,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nRegister callback function as an internal method.\n",
+                    "description": "<p>Register callback function as an internal method.</p>\n",
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "function",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "function": [],
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "registerOnTouched",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "function",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "function": []
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 163,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nRegister callback function as an internal method.\n",
+                    "description": "<p>Register callback function as an internal method.</p>\n",
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "function",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "function": [],
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "registerOnValidatorChange",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "function",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "function": []
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 167,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "function",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "function": [],
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "validate",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "ValidationErrors | null",
+                    "typeParameters": [],
+                    "line": 181,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nReturns form validation errors or null if form is valid.\n",
+                    "description": "<p>Returns form validation errors or null if form is valid.</p>\n"
+                },
+                {
+                    "name": "writeValue",
+                    "args": [
+                        {
+                            "name": "value",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 147,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "value",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "EditorModule",
+                    "type": "module"
+                },
+                {
+                    "name": "FormsModule",
+                    "type": "module"
+                },
+                {
+                    "name": "ReactiveFormsModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\r\nimport { AfterViewInit, ChangeDetectorRef, Component, forwardRef, Input, OnChanges, OnDestroy, SimpleChanges } from '@angular/core';\r\nimport { ControlValueAccessor, FormControl, FormsModule, NG_VALIDATORS, NG_VALUE_ACCESSOR, ReactiveFormsModule, ValidationErrors, Validator } from '@angular/forms';\r\nimport { EditorModule } from '@tinymce/tinymce-angular';\r\nimport { Subject, takeUntil } from 'rxjs';\r\nimport { RawEditorOptions } from 'tinymce';\r\n\r\n/**\r\n * Default options for simple WISYWYG editor. See Design library demo for example.\r\n */\r\nexport const defaultRTEOptions: RawEditorOptions = {\r\n    plugins: 'lists wordcount', // Imports wordcount and list plugins.\r\n    menubar: false, // Hides menu bar, there is a lot of useless functionalities here.\r\n    toolbar: 'undo redo | styles | bold italic | bullist numlist', // Configures toolbar styles, | acts as separator.\r\n    branding: false, // Remove bottom corner logo\r\n    height: 300, // Define height for the RTE, it cannot be dynamically changes with scss.\r\n};\r\n\r\n@Component({\r\n    selector: 'dd-rich-text-editor',\r\n    templateUrl: './rich-text-editor.component.html',\r\n    styleUrls: ['./rich-text-editor.component.scss'],\r\n    standalone: true,\r\n    imports: [\r\n        CommonModule, //\r\n        EditorModule,\r\n        FormsModule,\r\n        ReactiveFormsModule,\r\n    ],\r\n    providers: [\r\n        {\r\n            provide: NG_VALUE_ACCESSOR,\r\n            useExisting: forwardRef(() => RichTextEditorComponent),\r\n            multi: true,\r\n        },\r\n        {\r\n            provide: NG_VALIDATORS,\r\n            useExisting: forwardRef(() => RichTextEditorComponent),\r\n            multi: true,\r\n        },\r\n    ],\r\n})\r\nexport class RichTextEditorComponent implements ControlValueAccessor, Validator, OnChanges, AfterViewInit, OnDestroy {\r\n    constructor(private cdr: ChangeDetectorRef) {}\r\n\r\n    @Input() label?: string;\r\n\r\n    /**\r\n     * ID of the input field. Required if there are multiple on the same page.\r\n     */\r\n    @Input() id: string = 'dd-wysiwyg';\r\n\r\n    /**\r\n     * Options for configuring editor.\r\n     */\r\n    @Input() editorOptions: RawEditorOptions = defaultRTEOptions;\r\n\r\n    /** Error messages. */\r\n    @Input() errorMessages?: { [key: string]: string };\r\n\r\n    @Input() errors?: ValidationErrors | null;\r\n\r\n    /**\r\n     * When form is submitted, form field is validated and new detection cycle is triggered.\r\n     * If this input is not provided, the component will simply mark itself as touched whenever the value is changed.\r\n     * */\r\n    @Input() submitted?: boolean;\r\n\r\n    value: FormControl<string | null | undefined> = new FormControl();\r\n\r\n    private destroySubject: Subject<void> = new Subject();\r\n\r\n    /**\r\n     * Save the submitted value to the component.\r\n     */\r\n    private _submitted: boolean = false;\r\n\r\n    /**\r\n     * Returns the keys from the Object.keys as keyof T.\r\n     *\r\n     * https://github.com/microsoft/TypeScript/pull/12253#issuecomment-393954723\r\n     */\r\n    // eslint-disable-next-line @typescript-eslint/naming-convention\r\n    ObjectKeys: <T>(o: T) => Extract<keyof T, string>[] = Object.keys as <T>(o: T) => Extract<keyof T, string>[];\r\n\r\n    /**\r\n     * Find the error message from the input.\r\n     */\r\n    get errorMessage(): string | undefined {\r\n        if (this.value.errors) {\r\n            const keys: string[] = this.ObjectKeys(this.value.errors);\r\n\r\n            if (this.errorMessages) {\r\n                const key: string | undefined = this.ObjectKeys(this.errorMessages).find((errorKey) => keys.includes(errorKey));\r\n\r\n                // Return error message if the key is found.\r\n                if (key && this.errorMessages[key]) {\r\n                    return this.errorMessages[key];\r\n                }\r\n            }\r\n\r\n            return undefined;\r\n        }\r\n\r\n        return undefined;\r\n    }\r\n\r\n    /**\r\n     * Run one change detection and mark the form field as touched,\r\n     * so the error is shown if the form field is initialized with invalid value.\r\n     */\r\n    ngAfterViewInit(): void {\r\n        // If there are errors then trigger new change detection cycle which marks the field as touched.\r\n        if (this.errors && this.value?.value) {\r\n            setTimeout(() => {\r\n                this.markAsTouched();\r\n                this.value.updateValueAndValidity();\r\n                this.cdr.detectChanges();\r\n            });\r\n        }\r\n    }\r\n\r\n    ngOnChanges(changes: SimpleChanges): void {\r\n        // If the form is invalid then set the error message as custom error.\r\n        // Timeout required to show errors at init https://github.com/angular/angular/issues/19170#issuecomment-341555371\r\n        if (changes.errors) {\r\n            setTimeout(() => {\r\n                this.value.setErrors(changes.errors.currentValue);\r\n            });\r\n        }\r\n        if (this.submitted !== undefined) {\r\n            // Check if we should trigger detection cycle for the field.\r\n            if (this.submitted && !this._submitted) {\r\n                this._submitted = this.submitted;\r\n                this.markAsTouched();\r\n            }\r\n        }\r\n    }\r\n\r\n    ngOnDestroy(): void {\r\n        this.destroySubject.next();\r\n        this.destroySubject.complete();\r\n    }\r\n\r\n    _onChange: () => void = () => {};\r\n\r\n    writeValue(value: string): void {\r\n        this.value.setValue(value);\r\n    }\r\n\r\n    onTouched: () => void = () => {};\r\n\r\n    /**\r\n     * Register callback function as an internal method.\r\n     */\r\n    registerOnChange(fn: () => void): void {\r\n        this.value.valueChanges.pipe(takeUntil(this.destroySubject)).subscribe(fn);\r\n    }\r\n\r\n    /**\r\n     * Register callback function as an internal method.\r\n     */\r\n    registerOnTouched(fn: () => void): void {\r\n        this.onTouched = fn;\r\n    }\r\n\r\n    registerOnValidatorChange(fn: () => void): void {\r\n        this._onChange = fn;\r\n    }\r\n\r\n    /** Marks the form control as touched. */\r\n    markAsTouched() {\r\n        this.onTouched();\r\n        this.value.markAsTouched();\r\n        this.cdr.detectChanges();\r\n    }\r\n\r\n    /**\r\n     * Returns form validation errors or null if form is valid.\r\n     */\r\n    validate(): ValidationErrors | null {\r\n        if (!this.value.valid && this.errors) {\r\n            return this.errors;\r\n        }\r\n\r\n        // tslint:disable-next-line: no-null-keyword\r\n        return null;\r\n    }\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@use '../../../../../digital-delights-library/styles/helpers/borders';\r\n\r\n.dd-rte {\r\n    position: relative;\r\n    min-height: 300px;\r\n\r\n    // Minus margin so resizable textarea also reserves space for error-text\r\n    .error-text {\r\n        margin-top: -16px;\r\n    }\r\n\r\n    label {\r\n        position: absolute;\r\n        left: 9px;\r\n        z-index: 2;\r\n        font-size: 12px;\r\n        line-height: 11px;\r\n        background-color: inherit;\r\n        padding: 0 4px;\r\n        // Make the label only the half of the actual height\r\n        // Align content so text is rendered from the bottom\r\n        // Move 1 px up to go over the border.\r\n        height: 6px;\r\n        top: -1px;\r\n        display: flex;\r\n        align-items: flex-end;\r\n    }\r\n\r\n    editor::ng-deep {\r\n        // Add margin so all inputs reserve space for error-text\r\n        margin-bottom: 16px;\r\n        height: 100%;\r\n\r\n        .tox-tinymce {\r\n            border: borders.$border-style;\r\n            border-radius: 6px !important;\r\n            height: 100%;\r\n        }\r\n\r\n        .tox-editor-container {\r\n            margin-top: 4px;\r\n        }\r\n    }\r\n}\r\n",
+                    "styleUrl": "./rich-text-editor.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "cdr",
+                        "type": "ChangeDetectorRef",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 43,
+                "jsdoctags": [
+                    {
+                        "name": "cdr",
+                        "type": "ChangeDetectorRef",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "extends": [],
+            "implements": [
+                "ControlValueAccessor",
+                "Validator",
+                "OnChanges",
+                "AfterViewInit",
+                "OnDestroy"
+            ],
+            "accessors": {
+                "errorMessage": {
+                    "name": "errorMessage",
+                    "getSignature": {
+                        "name": "errorMessage",
+                        "type": "",
+                        "returnType": "string | undefined",
+                        "line": 89,
+                        "rawdescription": "\n\nFind the error message from the input.\n",
+                        "description": "<p>Find the error message from the input.</p>\n"
+                    }
+                }
+            },
+            "templateData": "<div class=\"dd-rte\">\r\n    <ng-container *ngIf=\"label\">\r\n        <label class=\"dd-white dd-primary-500-fg\"><span>{{ label }}</span></label>\r\n    </ng-container>\r\n\r\n    <editor [id]=\"id\" [init]=\"editorOptions\" [formControl]=\"value\"></editor>\r\n\r\n    <div *ngIf=\"value.errors && errorMessage\" class=\"error-text text-body-2 dd-danger-fg\" [id]=\"'form-field-error-{{label}}'\">\r\n        {{ errorMessage }}\r\n    </div>\r\n</div>\r\n"
+        }
+    ],
+    "modules": [],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "defaultRTEOptions",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/digital-delights-rte/src/rich-text-editor/components/rich-text-editor/rich-text-editor.component.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "RawEditorOptions",
+                "defaultValue": "{\r\n    plugins: 'lists wordcount', // Imports wordcount and list plugins.\r\n    menubar: false, // Hides menu bar, there is a lot of useless functionalities here.\r\n    toolbar: 'undo redo | styles | bold italic | bullist numlist', // Configures toolbar styles, | acts as separator.\r\n    branding: false, // Remove bottom corner logo\r\n    height: 300, // Define height for the RTE, it cannot be dynamically changes with scss.\r\n}",
+                "rawdescription": "Default options for simple WISYWYG editor. See Design library demo for example.",
+                "description": "<p>Default options for simple WISYWYG editor. See Design library demo for example.</p>\n"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "projects/digital-delights-rte/src/rich-text-editor/components/rich-text-editor/rich-text-editor.component.ts": [
+                {
+                    "name": "defaultRTEOptions",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/digital-delights-rte/src/rich-text-editor/components/rich-text-editor/rich-text-editor.component.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "RawEditorOptions",
+                    "defaultValue": "{\r\n    plugins: 'lists wordcount', // Imports wordcount and list plugins.\r\n    menubar: false, // Hides menu bar, there is a lot of useless functionalities here.\r\n    toolbar: 'undo redo | styles | bold italic | bullist numlist', // Configures toolbar styles, | acts as separator.\r\n    branding: false, // Remove bottom corner logo\r\n    height: 300, // Define height for the RTE, it cannot be dynamically changes with scss.\r\n}",
+                    "rawdescription": "Default options for simple WISYWYG editor. See Design library demo for example.",
+                    "description": "<p>Default options for simple WISYWYG editor. See Design library demo for example.</p>\n"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    }
+}

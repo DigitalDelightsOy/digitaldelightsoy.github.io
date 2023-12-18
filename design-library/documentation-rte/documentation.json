@@ -1,0 +1,482 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "RichTextEditorComponent",
+            "id": "component-RichTextEditorComponent-3a65b151d220e4d1738569fe5613652b1fe43996e2e1a6f46b0640ab75652dc2e71ef04a9dacf020e958d279afec8c815cecfa921ef39f437f1c7e394d6fa3b2",
+            "file": "projects/digital-delights-rte/src/rich-text-editor/components/rich-text-editor/rich-text-editor.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [
+                {
+                    "name": "{\n    provide: NG_VALUE_ACCESSOR, useExisting: forwardRef(() => RichTextEditorComponent), multi: true,\n}",
+                    "type": "component"
+                },
+                {
+                    "name": "{\n    provide: NG_VALIDATORS, useExisting: forwardRef(() => RichTextEditorComponent), multi: true,\n}",
+                    "type": "component"
+                }
+            ],
+            "selector": "dd-rich-text-editor",
+            "styleUrls": [
+                "./rich-text-editor.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./rich-text-editor.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "editorOptions",
+                    "defaultValue": "defaultRTEOptions",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nOptions for configuring editor.\n",
+                    "description": "<p>Options for configuring editor.</p>\n",
+                    "line": 56,
+                    "type": "RawEditorOptions",
+                    "decorators": []
+                },
+                {
+                    "name": "errorMessages",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nError messages.",
+                    "description": "<p>Error messages.</p>\n",
+                    "line": 59,
+                    "type": "literal type",
+                    "decorators": []
+                },
+                {
+                    "name": "errors",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 61,
+                    "type": "ValidationErrors | null",
+                    "decorators": []
+                },
+                {
+                    "name": "id",
+                    "defaultValue": "'dd-wysiwyg'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nID of the input field. Required if there are multiple on the same page.\n",
+                    "description": "<p>ID of the input field. Required if there are multiple on the same page.</p>\n",
+                    "line": 51,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 46,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "submitted",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nWhen form is submitted, form field is validated and new detection cycle is triggered.\nIf this input is not provided, the component will simply mark itself as touched whenever the value is changed.\n",
+                    "description": "<p>When form is submitted, form field is validated and new detection cycle is triggered.\nIf this input is not provided, the component will simply mark itself as touched whenever the value is changed.</p>\n",
+                    "line": 67,
+                    "type": "boolean",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "_onChange",
+                    "defaultValue": "() => {...}",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "function",
+                    "optional": false,
+                    "description": "",
+                    "line": 145
+                },
+                {
+                    "name": "_submitted",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "<p>Save the submitted value to the component.</p>\n",
+                    "line": 76,
+                    "rawdescription": "\n\nSave the submitted value to the component.\n",
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "destroySubject",
+                    "defaultValue": "new Subject()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Subject<void>",
+                    "optional": false,
+                    "description": "",
+                    "line": 71,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "ObjectKeys",
+                    "defaultValue": "Object.keys as <T>(o: T) => Extract<keyof T, string>[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "function",
+                    "optional": false,
+                    "description": "<p>Returns the keys from the Object.keys as keyof T.</p>\n<p><a href=\"https://github.com/microsoft/TypeScript/pull/12253#issuecomment-393954723\">https://github.com/microsoft/TypeScript/pull/12253#issuecomment-393954723</a></p>\n",
+                    "line": 84,
+                    "rawdescription": "\n\nReturns the keys from the Object.keys as keyof T.\n\nhttps://github.com/microsoft/TypeScript/pull/12253#issuecomment-393954723\n"
+                },
+                {
+                    "name": "onTouched",
+                    "defaultValue": "() => {...}",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "function",
+                    "optional": false,
+                    "description": "",
+                    "line": 151
+                },
+                {
+                    "name": "value",
+                    "defaultValue": "new FormControl()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "FormControl<string | null | undefined>",
+                    "optional": false,
+                    "description": "",
+                    "line": 69
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "markAsTouched",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 172,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nMarks the form control as touched.",
+                    "description": "<p>Marks the form control as touched.</p>\n"
+                },
+                {
+                    "name": "ngAfterViewInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 112,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nRun one change detection and mark the form field as touched,\nso the error is shown if the form field is initialized with invalid value.\n",
+                    "description": "<p>Run one change detection and mark the form field as touched,\nso the error is shown if the form field is initialized with invalid value.</p>\n"
+                },
+                {
+                    "name": "ngOnChanges",
+                    "args": [
+                        {
+                            "name": "changes",
+                            "type": "SimpleChanges",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 123,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "changes",
+                            "type": "SimpleChanges",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ngOnDestroy",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 140,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "registerOnChange",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "function",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "function": []
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 156,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nRegister callback function as an internal method.\n",
+                    "description": "<p>Register callback function as an internal method.</p>\n",
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "function",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "function": [],
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "registerOnTouched",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "function",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "function": []
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 163,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nRegister callback function as an internal method.\n",
+                    "description": "<p>Register callback function as an internal method.</p>\n",
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "function",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "function": [],
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "registerOnValidatorChange",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "function",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "function": []
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 167,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "function",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "function": [],
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "validate",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "ValidationErrors | null",
+                    "typeParameters": [],
+                    "line": 181,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nReturns form validation errors or null if form is valid.\n",
+                    "description": "<p>Returns form validation errors or null if form is valid.</p>\n"
+                },
+                {
+                    "name": "writeValue",
+                    "args": [
+                        {
+                            "name": "value",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 147,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "value",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "EditorModule",
+                    "type": "module"
+                },
+                {
+                    "name": "FormsModule",
+                    "type": "module"
+                },
+                {
+                    "name": "ReactiveFormsModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "assetsDirs": [],
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "cdr",
+                        "type": "ChangeDetectorRef",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 43,
+                "jsdoctags": [
+                    {
+                        "name": "cdr",
+                        "type": "ChangeDetectorRef",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "extends": [],
+            "implements": [
+                "ControlValueAccessor",
+                "Validator",
+                "OnChanges",
+                "AfterViewInit",
+                "OnDestroy"
+            ],
+            "accessors": {
+                "errorMessage": {
+                    "name": "errorMessage",
+                    "getSignature": {
+                        "name": "errorMessage",
+                        "type": "",
+                        "returnType": "string | undefined",
+                        "line": 89,
+                        "rawdescription": "\n\nFind the error message from the input.\n",
+                        "description": "<p>Find the error message from the input.</p>\n"
+                    }
+                }
+            }
+        }
+    ],
+    "modules": [],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "defaultRTEOptions",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/digital-delights-rte/src/rich-text-editor/components/rich-text-editor/rich-text-editor.component.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "RawEditorOptions",
+                "defaultValue": "{\n    plugins: 'lists wordcount', // Imports wordcount and list plugins.\n    menubar: false, // Hides menu bar, there is a lot of useless functionalities here.\n    toolbar: 'undo redo | styles | bold italic | bullist numlist', // Configures toolbar styles, | acts as separator.\n    branding: false, // Remove bottom corner logo\n    height: 300, // Define height for the RTE, it cannot be dynamically changes with scss.\n}",
+                "rawdescription": "Default options for simple WISYWYG editor. See Design library demo for example.",
+                "description": "<p>Default options for simple WISYWYG editor. See Design library demo for example.</p>\n"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "projects/digital-delights-rte/src/rich-text-editor/components/rich-text-editor/rich-text-editor.component.ts": [
+                {
+                    "name": "defaultRTEOptions",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/digital-delights-rte/src/rich-text-editor/components/rich-text-editor/rich-text-editor.component.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "RawEditorOptions",
+                    "defaultValue": "{\n    plugins: 'lists wordcount', // Imports wordcount and list plugins.\n    menubar: false, // Hides menu bar, there is a lot of useless functionalities here.\n    toolbar: 'undo redo | styles | bold italic | bullist numlist', // Configures toolbar styles, | acts as separator.\n    branding: false, // Remove bottom corner logo\n    height: 300, // Define height for the RTE, it cannot be dynamically changes with scss.\n}",
+                    "rawdescription": "Default options for simple WISYWYG editor. See Design library demo for example.",
+                    "description": "<p>Default options for simple WISYWYG editor. See Design library demo for example.</p>\n"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    }
+}
