@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1702912323467,
+  "timestamp": 1702913018822,
   "index": "/jis-test/index.html",
   "assetGroups": [
     {
@@ -268,7 +268,7 @@
     "/jis-test/fa-solid-900.fd0b155cd663a8fa.woff2": "97f0942c6627ddd89fb62170e5cac9a2cbd6c98c",
     "/jis-test/index.html": "cd89881839aaa77c00540e7c1aaa3d6a65be5736",
     "/jis-test/main.4272a1cfdaeac80c.js": "83afa57fc0ffedde0a061865e25a1a54e0ef2df6",
-    "/jis-test/manifest.webmanifest": "5a49634b165051ce069ac644549120332bac7391",
+    "/jis-test/manifest.webmanifest": "0c2f6cb058461d268fdb31576c98b337344d19cb",
     "/jis-test/polyfills.4cbf4394fcdc6b8b.js": "502382546798b2af145843c91ae675831a3a73b9",
     "/jis-test/runtime.26bedda3192299c2.js": "3ac2fd413cbcb3763dcabf927a492d4295fe6506",
     "/jis-test/styles.d7ff24bcb5e9b346.css": "cdbf48a10b29e07c915119307728f7287b2d062e"
